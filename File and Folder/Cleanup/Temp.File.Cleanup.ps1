@@ -13,7 +13,7 @@ An array of cleanup sections to include. By default, all sections are included.
 This example runs the script and includes only the 'Recycle Bin' and 'Temporary Files' cleanup sections.
 
 .NOTES
-Author: Your Name
+Author: Redwanul Alam (redwan@gmail.com)
 #>
 
 param(
