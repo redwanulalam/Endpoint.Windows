@@ -1,0 +1,1 @@
+Software uninstaller collections
