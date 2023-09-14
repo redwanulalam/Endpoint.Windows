@@ -1,1 +1,1 @@
-Software uninstaller collections
+Install, detect and uninstallation script collections
