@@ -1,13 +1,15 @@
 $SEARCH = '*LabTech*'
-$INSTALLED = Get-ItemProperty 'HKLM:\Software\Wow6432Node\LabTech\*' | Select-Object DisplayName, UninstallString
+$INSTALLED = Get-ItemProperty 'HKLM:\Software\Wow6432Node\*' | Select-Object DisplayName, UninstallString
 $INSTALLED += Get-ItemProperty 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*' | Select-Object DisplayName, UninstallString
 $RESULT = $INSTALLED | Where-Object { $_.DisplayName -like $SEARCH }
 
 $SEARCH2 = '*ConnectWise Automate Remote Agent*'
+$INSTALLED2 = Get-ItemProperty 'HKLM:\Software\Wow6432Node\*' | Select-Object DisplayName, UninstallString
 $INSTALLED2 += Get-ItemProperty 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*' | Select-Object DisplayName, UninstallString
 $RESULT2 = $INSTALLED2 | Where-Object { $_.DisplayName -like $SEARCH2 }
 
 $SEARCH3 = '*ScreenConnect Client*'
+$INSTALLED3 = Get-ItemProperty 'HKLM:\Software\Wow6432Node\*' | Select-Object DisplayName, UninstallString
 $INSTALLED3 += Get-ItemProperty 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*' | Select-Object DisplayName, UninstallString
 $RESULT3 = $INSTALLED3 | Where-Object { $_.DisplayName -like $SEARCH3 }
 
